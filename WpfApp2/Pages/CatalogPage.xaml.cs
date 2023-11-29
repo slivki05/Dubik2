@@ -13,23 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp2
+namespace WpfApp2.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для CatalogPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CatalogPage : Page
     {
-        public MainWindow()
+        public CatalogPage()
         {
             InitializeComponent();
-            FrameManager.Frame = MainFrame;
-            FrameManager.Frame.Navigate(new MainPage());
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            FrameManager.Frame.Navigate(new MainPage());
         }
     }
 }

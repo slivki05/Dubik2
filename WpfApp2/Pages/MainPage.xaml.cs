@@ -16,20 +16,13 @@ using System.Windows.Shapes;
 namespace WpfApp2
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для MainPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainPage : Page
     {
-        public MainWindow()
+        public MainPage()
         {
             InitializeComponent();
-            FrameManager.Frame = MainFrame;
-            FrameManager.Frame.Navigate(new MainPage());
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            FrameManager.Frame.Navigate(new MainPage());
         }
     }
 }

@@ -5,8 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Главное меню" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF898E9C"/>
+                <GradientStop Color="#FF333438" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="342*"/>
+            <RowDefinition Height="77*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="74*"/>
+        </Grid.ColumnDefinitions>
+        <Frame Name="MainFrame" Grid.Column="1" NavigationUIVisibility="Hidden" Grid.RowSpan="2">
+        </Frame>
+        <StackPanel Background="#3F000000">
+            <Button Content="Главная" Click="Button_Click"/>
+            <Button Content="Каталог товаров"/>
+            <Button Content="2"/>
+            <Button Content="3"/>
+            <Button Content="4"/>
+            <Button Content="5"/>
+        </StackPanel>
+        <Grid Grid.Row="1" Background="#3F000000">
+            <Button Content="Выход"/>
+        </Grid>
     </Grid>
 </Window>
