@@ -9,6 +9,7 @@
       Title="CatalogPage">
 
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Left" Margin="328,216,0,0" TextWrapping="Wrap" Text="LOL" VerticalAlignment="Top"/>
+
     </Grid>
 </Page>
